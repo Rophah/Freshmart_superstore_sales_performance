@@ -163,7 +163,7 @@ The following cleaning and transformation steps were carried out using **Power Q
   * `Invoice ID` connects **City**, **Customer**, and **Product** dimension tables to the **Sales_Fact** table (*one-to-one relationship*).
   * `Date` connects the **Calendar table** to the **Sales_Fact table** (*one-to-many relationship*).
 
-After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.
+**After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.**
 ---
 
 ## 📸 Visuals & Dashboard
