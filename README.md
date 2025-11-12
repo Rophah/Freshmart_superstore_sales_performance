@@ -1,4 +1,4 @@
-# 🛒 Freshmart Superstores Sales Performance Report
+  # 🛒 Freshmart Superstores Sales Performance Report
 
 ## 📊 Project Overview
 
@@ -124,20 +124,46 @@ A **Star Schema** model was used to connect all tables through relationships for
 
 ---
 
-## 🧹 Data Cleaning & Transformation Steps
+## 🧹 Data Cleaning and Preparation
 
-* Checked and corrected data types
-* Removed duplicate entries
-* Created new columns for **Revenue (without tax)** and **Time of Day**
-* Built calculated measures:
+The dataset contained **four sheets (tables)** —
+
+* `Customer Details`
+* `City Details`
+* `Product Details`
+* `Supermarket Sales`
+
+All tables were linked using **Invoice ID** as the **unique identifier (Primary Key)**.
+
+From these tables:
+
+* Three **dimension tables** were created: `Customer Details`, `City Details`, and `Product Details`.
+* An additional **Calendar table** was created to support **time series analysis**.
+* A **fact table** named `Sales_Fact` was created from the `Supermarket Sales` data.
+
+---
+
+### 🔧 Transformation & Data Preparation Steps
+
+The following cleaning and transformation steps were carried out using **Power Query** and **Power BI DAX**:
+
+* ✅ Checked all columns and verified **data types** were correct.
+* 🏷️ **Promoted headers** for City, Customer, and Product tables.
+* 📆 Converted the **Date column** into a full **date hierarchy** (Year, Quarter, Month, Day, and Hour).
+* 🕐 Created a **Time of Day** column (Morning, Afternoon, Evening) in the Calendar table using a conditional column.
+* 🚫 Removed **duplicate entries** from all dimension tables to ensure data integrity.
+* ➕ Created **calculated measures** using DAX:
 
   * Total Revenue
   * Total Gross Income
   * Total Orders
   * Average Rating
-* Created date hierarchies (Year, Quarter, Month, Day)
-* Connected all tables using **relationships** for accurate analysis
+* 🌟 Designed a **Star Schema** data model to connect all tables:
 
+  * `Invoice ID` connects **City**, **Customer**, and **Product** dimension tables to the **Sales_Fact** table (*one-to-one relationship*).
+  * `Date` connects the **Calendar table** to the **Sales_Fact table** (*one-to-many relationship*).
+
+After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.
 ---
 
 ## 📸 Visuals & Dashboard
