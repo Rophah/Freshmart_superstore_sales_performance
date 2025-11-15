@@ -150,7 +150,7 @@ Designed a clean star schema linking all tables:
 <br>
 **Overview of data modelling**
 <br>
-![Sales table-Raw Data Overview](images/modeling.PNG)
+![Dashboard Overview](images/modeling.PNG)
 <br><br>
 ---
 
@@ -158,7 +158,7 @@ Designed a clean star schema linking all tables:
 
 **1️⃣ Overview of Dashboard**
 <br><br>
-![Dashboard Overview](images/dashboard.PNG)
+![Dashboard Overview](images/Dashboard.PNG)
 <br><br>
 **2️⃣ Revenue Report**
 <br><br>
