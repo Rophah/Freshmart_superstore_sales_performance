@@ -1,4 +1,4 @@
-  # 🛒 Freshmart Superstores Sales Performance Report
+# 🛒 Freshmart Superstores Sales Performance Report
 
 ## 📊 Project Overview
 
@@ -110,6 +110,46 @@ The dataset used in this project was provided by our instructor **Ms. Bolatito**
 
 ---
 
+## 🛠️ Data Cleaning & Transformation (Power Query)
+
+This project uses **FreshMart Superstores Sales** data, originally provided in five tables:
+`customer-details`, `product-details`, `calendar`, `city-details`, and `supermarket-sales`.
+
+From these, I created **four dimension tables** — `dim_customer`, `dim_product`, `dim_calendar`, `dim_city` — and **one fact table**.
+
+### 🔧 Cleaning & Preparation Steps
+
+* **Verified Data Types:**
+  Reviewed all columns across tables and ensured each had the correct data type (e.g., text, whole number, decimal, date).
+
+* **Promoted Headers:**
+  Applied header promotion to `city-details`, `customer-details`, and `product-details` tables for proper column naming.
+
+* **Built the `dim_calendar` Table:**
+
+  * Converted the `Date` column into a full date hierarchy: **Year → Quarter → Month → Day → Hour**.
+  * Added a new **Time of Day** classification column (`Morning`, `Afternoon`, `Evening`) using conditional logic.
+
+* **Ensured Data Quality:**
+
+  * Removed duplicate rows from all dimension tables to maintain consistency and avoid relationship conflicts.
+
+### ➕ Calculated Measures Created
+
+* **Total Revenue**
+* **Total Gross Income**
+* **Total Orders**
+* **Average Rating**
+
+### ⭐ Data Model (Star Schema)
+
+Designed a clean star schema linking all tables:
+
+* **Invoice ID** connects `dim_city`, `dim_customer`, and `dim_product` to the **Sales_Fact** table (**one-to-one** relationships).
+* **Date** links `dim_calendar` to the **Sales_Fact** table (**one-to-many** relationship).
+
+*After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.*
+---
 ## 🗂️ Data Model
 
 * **Fact Table:** Sales data (Revenue, Quantity, COGS, etc.)
@@ -121,63 +161,13 @@ The dataset used in this project was provided by our instructor **Ms. Bolatito**
   * Date Calendar
 
 A **Star Schema** model was used to connect all tables through relationships for efficient reporting.
-Excellent choice 👍 — a **Star Schema diagram** makes your GitHub README stand out and helps readers quickly understand your data structure.
-
-Here’s a clean and simple **markdown + Mermaid diagram** version you can paste directly into your README:
-
----
-
-## 🧩 Data Model — Star Schema
-
-Below is the **Star Schema** used for the Freshmart Sales Performance project.
-It connects one central **Fact Table** (`Sales_Fact`) with multiple **Dimension Tables** (`Customer`, `City`, `Product`, and `Calendar`).
-
-## 🧹 Model Explanation
-
-The dataset contained **four sheets (tables)** —
-
- * `Customer_Details` → information about customers
- * `City_Details` → branch and city information
- * `Product_Details` → product line and category info
- * `Calendar` → date, time, and hierarchy info for time-based analysis
- * `Supermarket Sales`
-
-All tables were linked using **Invoice ID** as the **unique identifier (Primary Key)**.
-
-From these tables:
-
-* Three **dimension tables** were created: `Customer Details`, `City Details`, and `Product Details`.
-* An additional **Calendar table** was created to support **time series analysis**.
-* A **fact table** named `Sales_Fact` was created from the `Supermarket Sales` data.
 
 <br><br>
 **Overview of data modelling**
 <br>
 ![Sales table-Raw Data Overview](images/modeling.PNG)
 <br><br>
----
 
-### 🔧 Transformation & Data Preparation Steps
-
-The following cleaning and transformation steps were carried out using **Power Query** and **Power BI DAX**:
-
-* ✅ Checked all columns and verified **data types** were correct.
-* 🏷️ **Promoted headers** for City, Customer, and Product tables.
-* 📆 Converted the **Date column** into a full **date hierarchy** (Year, Quarter, Month, Day, and Hour).
-* 🕐 Created a **Time of Day** column (Morning, Afternoon, Evening) in the Calendar table using a conditional column.
-* 🚫 Removed **duplicate entries** from all dimension tables to ensure data integrity.
-* ➕ Created **calculated measures** using DAX:
-
-  * Total Revenue
-  * Total Gross Income
-  * Total Orders
-  * Average Rating
-* 🌟 Designed a **Star Schema** data model to connect all tables:
-
-  * `Invoice ID` connects **City**, **Customer**, and **Product** dimension tables to the **Sales_Fact** table (*one-to-one relationship*).
-  * `Date` connects the **Calendar table** to the **Sales_Fact table** (*one-to-many relationship*).
-
-**After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.**
 ---
 
 ## 📸 Visuals & Dashboard
