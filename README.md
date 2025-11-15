@@ -195,14 +195,3 @@ Implementing the recommendations will help Freshmart improve efficiency, custome
 
 ---
 
-If you want, I can also:
-
-✨ Add a **GIF preview** of your dashboard
-✨ Add installation/usage instructions
-✨ Add "Project Structure" or "How to Use This Dashboard"
-✨ Add a **Live demo link** (if you publish on Power BI Service)
-
-Would you like those added?
-
-
-
