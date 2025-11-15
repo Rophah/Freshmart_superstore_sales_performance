@@ -80,7 +80,7 @@ This project answers the following key questions:
      * **Evening:** 4 PM – 9 PM
 
 ---
-
+<br>
 ## 🧾 Data Collection and Description
 
 The dataset used in this project was provided by our instructor **Ms. Bolatito**. It contains detailed transaction records from **Freshmart Superstores** across three branches in **Mandalay**, **Naypyitaw**, and **Yangon**.
@@ -109,7 +109,7 @@ The dataset used in this project was provided by our instructor **Ms. Bolatito**
 * **DAX (Data Analysis Expressions)** → Calculations and KPIs
 
 ---
-
+<br>
 ## 🛠️ Data Cleaning & Transformation (Power Query)
 
 This project uses **FreshMart Superstores Sales** data, originally provided in five tables:
@@ -141,17 +141,6 @@ From these, I created **four dimension tables** — `dim_customer`, `dim_product
 * **Total Orders**
 * **Average Rating**
 
----
-## 🗂️ Data Model
-
-* **Fact Table:** Sales data (Revenue, Quantity, COGS, etc.)
-* **Dimension Tables:**
-
-  * Customers
-  * Products
-  * Cities
-  * Date Calendar
-
 Designed a clean star schema linking all tables:
 
 * **Invoice ID** connects `dim_city`, `dim_customer`, and `dim_product` to the **Sales_Fact** table (**one-to-one** relationships).
@@ -162,9 +151,8 @@ Designed a clean star schema linking all tables:
 <br>
 ![Sales table-Raw Data Overview](images/modeling.PNG)
 <br><br>
-
 ---
-
+<br>
 ## 📸 Visuals & Dashboard
 
 **1️⃣ Overview of Dashboard**
