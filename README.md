@@ -121,17 +121,26 @@ The dataset used in this project was provided by our instructor **Ms. Bolatito**
   * Date Calendar
 
 A **Star Schema** model was used to connect all tables through relationships for efficient reporting.
+Excellent choice 👍 — a **Star Schema diagram** makes your GitHub README stand out and helps readers quickly understand your data structure.
+
+Here’s a clean and simple **markdown + Mermaid diagram** version you can paste directly into your README:
 
 ---
 
-## 🧹 Data Cleaning and Preparation
+## 🧩 Data Model — Star Schema
+
+Below is the **Star Schema** used for the Freshmart Sales Performance project.
+It connects one central **Fact Table** (`Sales_Fact`) with multiple **Dimension Tables** (`Customer`, `City`, `Product`, and `Calendar`).
+
+## 🧹 Model Explanation
 
 The dataset contained **four sheets (tables)** —
 
-* `Customer Details`
-* `City Details`
-* `Product Details`
-* `Supermarket Sales`
+ * `Customer_Details` → information about customers
+ * `City_Details` → branch and city information
+ * `Product_Details` → product line and category info
+ * `Calendar` → date, time, and hierarchy info for time-based analysis
+ * `Supermarket Sales`
 
 All tables were linked using **Invoice ID** as the **unique identifier (Primary Key)**.
 
@@ -141,6 +150,11 @@ From these tables:
 * An additional **Calendar table** was created to support **time series analysis**.
 * A **fact table** named `Sales_Fact` was created from the `Supermarket Sales` data.
 
+<br><br>
+**Overview of data modelling**
+<br>
+![Sales table-Raw Data Overview](images/modeling.PNG)
+<br><br>
 ---
 
 ### 🔧 Transformation & Data Preparation Steps
@@ -164,11 +178,6 @@ The following cleaning and transformation steps were carried out using **Power Q
   * `Date` connects the **Calendar table** to the **Sales_Fact table** (*one-to-many relationship*).
 
 **After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.**
-
-**Overview of data modelling**
-<br><br>
-![Sales table-Raw Data Overview](images/modeling.PNG)
-<br><br>
 ---
 
 ## 📸 Visuals & Dashboard
