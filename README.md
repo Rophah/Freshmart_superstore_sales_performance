@@ -78,9 +78,9 @@ This project answers the following key questions:
      * **Morning:** 9 AM – 12 Noon
      * **Afternoon:** 12 Noon – 4 PM
      * **Evening:** 4 PM – 9 PM
-
----
 <br>
+---
+
 ## 🧾 Data Collection and Description
 
 The dataset used in this project was provided by our instructor **Ms. Bolatito**. It contains detailed transaction records from **Freshmart Superstores** across three branches in **Mandalay**, **Naypyitaw**, and **Yangon**.
@@ -100,6 +100,7 @@ The dataset used in this project was provided by our instructor **Ms. Bolatito**
 | **Date, Time**                  | Transaction timestamp (used for trend and time-based analysis)        |
 | **Rating**                      | Customer satisfaction score (scale of **1–10**)                       |
 
+<br>
 ---
 
 ## 🧰 Tools Used
@@ -152,7 +153,7 @@ Designed a clean star schema linking all tables:
 ![Sales table-Raw Data Overview](images/modeling.PNG)
 <br><br>
 ---
-<br>
+
 ## 📸 Visuals & Dashboard
 
 **1️⃣ Overview of Dashboard**
@@ -186,7 +187,7 @@ Designed a clean star schema linking all tables:
 * 💳 **E-wallet** and **Cash** were the most **preferred payment methods**
 * ⏰ **Evening hours (4 PM – 9 PM)** had the **highest sales**
 * 📅 **January** was the **top-performing month**, and **Saturdays** recorded the **highest daily sales**
-
+<br>
 ---
 
 ## 💡 Recommendations
@@ -199,7 +200,7 @@ attract and retain high-value customers.
 5. Partner with **E-wallet providers** for cashback and promo deals to strengthen customer
 convenience.
 6. Extend **store hours** or run **weekend campaigns** to boost weekend sales.
-
+<br>
 ---
 
 ## 🧾 Conclusion
@@ -207,6 +208,7 @@ convenience.
 This analysis highlights the key factors driving sales and profit across Freshmart branches.
 By focusing on high-performing products, customer loyalty, and peak sales periods, Freshmart Superstores can **improve efficiency, boost sales, and enhance customer satisfaction**.
 
+<br>
 ---
 
 ## 📬 Contact
