@@ -164,41 +164,34 @@ The following cleaning and transformation steps were carried out using **Power Q
   * `Date` connects the **Calendar table** to the **Sales_Fact table** (*one-to-many relationship*).
 
 **After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.**
+
+**Overview of data modelling**
+<br><br>
+![Sales table-Raw Data Overview](images/modeling.PNG)
+<br><br>
 ---
 
 ## 📸 Visuals & Dashboard
 
-**1️⃣ Dashboard Overview**
+**1️⃣ Overview of Dashboard**
 <br><br>
 ![Dashboard Overview](images/dashboard.PNG)
 <br><br>
-**2️⃣ Sales Table – Before Cleaning**
+**2️⃣ Revenue Report**
 <br><br>
-![Sales table-Raw Data Overview](images/sales_dirty.PNG)
+![Sales table-Raw Data Overview](images/revenue.PNG)
 <br><br>
-**3️⃣ Sales Table – After Cleaning**
+**3️⃣ Customer Segment Report**
 <br><br>
-![Sales table-After Cleaning Overview](images/sales_cleaned_data.PNG)
+![Sales table-After Cleaning Overview](images/customer_segment.PNG)
 <br><br>
-**4️⃣ Fact table**
+**4️⃣ Sales Report**
 <br><br>
-![Fact table Overview](images/fact_table.PNG)
+![Calendar table Overview](images/sales.PNG)
 <br><br>
-**5️⃣ Calendar Table (Dimension)**
+**5️⃣ Product Report**
 <br><br>
-![Calendar table Overview](images/calendar.PNG)
-<br><br>
-**6️⃣ Country table (Dimension)**
-<br><br>
-![Country table Overview](images/country.PNG)
-<br><br>
-**7️⃣ Customer table  (Dimension)**
-<br><br>
-![Customer table Overview](images/customer.PNG)
-<br><br>
-**8️⃣ Product table (Dimension)**
-<br><br>
-![Product table Overview](images/product.PNG)
+![Fact table Overview](images/product.PNG)
 <br><br>
 
 ---
