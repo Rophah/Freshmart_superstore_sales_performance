@@ -141,14 +141,6 @@ From these, I created **four dimension tables** — `dim_customer`, `dim_product
 * **Total Orders**
 * **Average Rating**
 
-### ⭐ Data Model (Star Schema)
-
-Designed a clean star schema linking all tables:
-
-* **Invoice ID** connects `dim_city`, `dim_customer`, and `dim_product` to the **Sales_Fact** table (**one-to-one** relationships).
-* **Date** links `dim_calendar` to the **Sales_Fact** table (**one-to-many** relationship).
-
-After cleaning and transformation, the dataset was **accurate**, **consistent**, and **ready for visualization** in Power BI.
 ---
 ## 🗂️ Data Model
 
@@ -160,7 +152,10 @@ After cleaning and transformation, the dataset was **accurate**, **consistent**,
   * Cities
   * Date Calendar
 
-A **Star Schema** model was used to connect all tables through relationships for efficient reporting.
+Designed a clean star schema linking all tables:
+
+* **Invoice ID** connects `dim_city`, `dim_customer`, and `dim_product` to the **Sales_Fact** table (**one-to-one** relationships).
+* **Date** links `dim_calendar` to the **Sales_Fact** table (**one-to-many** relationship).
 
 <br>
 **Overview of data modelling**
